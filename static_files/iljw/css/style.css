@@ -251,6 +251,9 @@ iframe.b-hbp-video {
 
 .post-body img {
     max-width: 100%
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .post-body iframe {
@@ -2032,7 +2035,7 @@ body.item-view .post-share-buttons-bottom {
 }
 
 .post-title,.post-title a,.post-title a:hover,.post-title a:visited {
-    color: #212121
+    color: ##232323;
 }
 
 .post-title {
@@ -2049,8 +2052,8 @@ body.item-view .post-share-buttons-bottom {
 }
 
 .post-body {
-    color: #131313;
-    font-size: 1.05em;
+    color: #424242;
+    font-size: 1.1em;
     letter-spacing: .08em;
     line-height: 1.6em;
     margin: 1.5em 0 2em;
