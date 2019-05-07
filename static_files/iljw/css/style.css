@@ -250,7 +250,7 @@ iframe.b-hbp-video {
 }
 
 .post-body img {
-    max-width: 100%
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: block;
