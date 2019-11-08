@@ -5,15 +5,22 @@ tags: VirtualBox
 
 ---
 
-<h3 id="virtualbox-是什么">VirtualBox 是什么</h3>
+<h3 id="目录">目录</h3>
+<ul>
+<li><a href="#1">VirtualBox 是什么</a></li>
+<li><a href="#2">系统镜像下载</a></li>
+<li><a href="#3">解决 VirtualBox 点击「安装增强功能」没有反应</a></li>
+<li><a href="#4">VirtualBox 虚拟机/主机双向拖曳文件，共享粘贴板</a></li>
+</ul>
+<h3 id="1">VirtualBox 是什么</h3>
 <p>Oracle VirtualBox 是由德国 InnoTek 软件公司出品的虚拟机软件，现在则由甲骨文公司进行开发，是甲骨文公司xVM虚拟化平台技术的一部分<sup class="footnote-ref"><a href="#fn1" id="fnref1">1</a></sup>。</p>
 <p>VirtualBox 同时也是一开源软件，对于我来说软件轻量、功能够用，这便是是我选择  VirtualBox 主要原因。</p>
-<h3 id="系统镜像下载">系统镜像下载</h3>
+<h3 id="2">系统镜像下载</h3>
 <p>Windows 系统：<a href="http://msdn.itellyou.cn/">下载</a><br>
 Ubuntu：<a href="https://ubuntu.com/download/desktop">下载</a><br>
 Linux Mint：<a href="https://linuxmint.com/download.php">下载</a><br>
 Deepin：<a href="https://www.deepin.org/download/">下载</a></p>
-<h3 id="解决-virtualbox-点击「安装增强功能」没有反应">解决 VirtualBox 点击「安装增强功能」没有反应</h3>
+<h3 id="3">解决 VirtualBox 点击「安装增强功能」没有反应</h3>
 <ol>
 <li>设备→分配光驱→选择虚拟盘；</li>
 <li>在 VirtualBox 的安装路径下找到并打开<code>VBoxGuestAdditions.iso</code>，；</li>
@@ -33,12 +40,10 @@ Deepin：<a href="https://www.deepin.org/download/">下载</a></p>
 <p><img src="https://cdn.jsdelivr.net/gh/joeyliu6/Blogger@master/static_files/iljw/img/large/20191101213505.png" alt="VirtualBox 点击「安装增强功能」没有反应，步骤2"></p>
 <p><img src="https://cdn.jsdelivr.net/gh/joeyliu6/Blogger@master/static_files/iljw/img/large/20191101213645.png" alt="VirtualBox 点击「安装增强功能」没有反应，步骤3"></p>
 <p><img src="https://cdn.jsdelivr.net/gh/joeyliu6/Blogger@master/static_files/iljw/img/large/20191101213850.png" alt="VirtualBox 点击「安装增强功能」没有反应，步骤4"></p>
-<h3 id="virtualbox-虚拟机主机双向拖曳文件，共享粘贴板">VirtualBox 虚拟机/主机双向拖曳文件，共享粘贴板</h3>
-<ol>
-<li>安装增强功能；</li>
-<li>设备→拖放→双向；</li>
-<li>设备→共享粘贴板→双向；</li>
-</ol>
+<h3 id="4">VirtualBox 虚拟机/主机双向拖曳文件，共享粘贴板</h3>
+1. 安装增强功能；
+2. 设备→拖放→双向；
+3. 设备→共享粘贴板→双向；
 <hr>
 <ol>
 <li>2019-11-01：</li>
