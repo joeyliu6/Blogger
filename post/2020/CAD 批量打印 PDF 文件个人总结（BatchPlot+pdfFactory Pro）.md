@@ -74,5 +74,6 @@ pdfFactory Pro 本身也有一个「页边距」的设置，即使把图纸的�
 [^2]:[通过cad的pdffactory pro虚拟打印机打出来的pdf文件周围部分缺失_百度知道](https://zhidao.baidu.com/question/1694374051379970508.html)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE4MDU0NTg5XX0=
+eyJwcm9wZXJ0aWVzIjoidGFnczogQ0FEXG4iLCJoaXN0b3J5Ij
+pbMTI0MDQwNTRdfQ==
 -->
