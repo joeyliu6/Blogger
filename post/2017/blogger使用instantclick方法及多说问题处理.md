@@ -1,68 +1,42 @@
-**什么是instantclick?**
 
-**instantclick.js是利用鼠标点击链接前的短暂时间进行预加载，从而在感观上实现了迅速打开页面的效果。实际效果可以查看本站。**
+[instant.page](https://instant.page/) 是 [InstantClick](http://instantclick.io/) 作者 [Alexandre Dieulot](https://dieulot.fr/) 重新编写的一个轻量（202 行代码）和易用的预加载脚本[^1]。
 
-在访问者点击一个链接之前，鼠标会悬停在链接上面。悬停(mouseover)或按下(mousedown)与点击(click,按下并松开鼠标)事件之间通常有200ms~300ms的间隔，InstantClick 利用这个时间间隔预加载页面。这样当你打开页面的时候，其实页面已经加载到本地了，也就会很快能个完成渲染。
+[instant.page](https://instant.page/) 只会预加载 HTML 文件，所以引用 [instant.page](https://instant.page/) 对网页其他的 JS 脚本大部分无影响，可以无痛接入 Blogger 模板。这是相对于 [InstantClick](http://instantclick.io/) 的一个优点，同时，它也保留 `data-no-instant` 属性，在 Blogger 中使用要变为 `data-no-instant="data-no-instant"`。
 
-----------
+它的使用很简单，在 `</body>` 标签前引用 instantpage.js 脚本文件即可。
 
-  
+```xml
+<script crossorigin='anonymous' defer='defer' integrity='sha384-Ru9Gb9wm9FHKVnt9FvZ+Kvu+IKmrX/Dw0ncsVaTA8QxI8Jy9m+79lY2IlLwQCJcq' src='https://lib.baomitu.com/instant.page/latest/instantpage.min.js'/>
+```
+
+----------------
+
+以下为文章旧内容，仅作参考。
+
+### 什么是 InstantClick.js
+
+在访客点击一个链接的步骤是：鼠标悬停（mouseover）、按下（mousedown）与点击（click）。在事件之间通常有 200ms~300ms 的间隔，InstantClick.js 是利用鼠标点击链接时的短暂瞬间完成预加载动作，从而实现了网页迅速加载的错觉。
 
 项目详情及官方文档：[http://instantclick.io/](http://instantclick.io/) (英文) 中文文档：[点此](https://www.ihewro.com/archives/515/)
 
-  
+### InstantClick.js 使用
 
-**开始使用**
+在 `</body>` 标签前插入
 
-建议大家先了解一下其具体的工作原理，下面我为大家说明blogger中安装instantclick.js一些事项。
-
-  
-
-**1、安装：**在</body>之前插入
-
-```
+```xml
 <script data-no-instant='data-no-instant' src='http://lib.baomitu.com/instantclick/3.0.1/instantclick.js'/>
-
 <script data-no-instant='data-no-instant'>InstantClick.init();</script>
 ```
 
-  
+### 与其他 js 脚本文件发生冲突
 
-说明：官方文档说，如果在<body>标签内部有一个脚本，当instantclick切换到另一个页面的时候，你并不希望重新加载它 ，你可以添加一个
+如果你有另外一个 js 脚本，你并不希望预先加载它，若预加载，那么脚本可能会失效。
 
-```
-data-no-instant
-```
-属性。
+这时，我们可以在 `script` 标签内添加一个`data-no-instant` 属性。在 Blogger 中，我们需要改为 `data-no-instant="data-no-instant"`。
 
+### ~~多说评论框消失和多说评论数获取失败~~
 
-然后在blogger中我们需要将
-```
-data-no-instant
-```
-
-改为
-
-```
-data-no-instant='data-no-instant'
-```
-
-。否则，在解析xml文件时，blogger会报错。
-
-  
-2、**与其他脚本文件发生冲突问题解决**
-
-若接着安装完后，点击保存，查看网站，跳转链接时可能会出现页面空白或页面元素缺失。这是因为instantclick.js其他脚本文件发生冲突
-
-  
-
-解决方法：向所有脚本添加一个`data-no-instant`  属性，然后逐个删除每个属性，直到找到原因。
-
-**3、多说评论框消失和多说评论数获取失败**
-
-解决方法：
-
-**针对于评论框：**在
+针对评论框，在
 
 ```
 <script data-no-instant='data-no-instant'>InstantClick.init();</script>
@@ -76,7 +50,7 @@ if(isInitialLoad===false){if($(".ds-thread").length && typeof DUOSHUO !== "undef
 }}});//]]></script>
 ```
 
-**针对于评论数获取：**在
+针对于论数获取，在
 ```
  <script data-no-instant='data-no-instant'>InstantClick.init();</script> 
 ```
@@ -87,14 +61,7 @@ if(isInitialLoad===false){DUOSHUO.ThreadCount($('.ds-thread-count'));
 }});//]]></script>
 ```
 
-**加入代码后未能解决，确认网页是否有载入jquery脚本。**
-  
-
-**总结：**
-
-按上面步骤正确操作下来，instantclick应该就已经安装上了。如果想要进一阶设置，可详细查看官方文档，此处就不多说了。（因为我也不懂@-@）
-
-instantclick这个项目本身还存在一些bug，我目前知道的是如果按浏览器的返回键后，页面加载可能会出现一些问题。github也有人发现了这个问题（[点此](https://github.com/dieulot/instantclick/issues/111)）,作者说将会在一个版本中解决这个问题。
+[^1]:https://instant.page/tech#history
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoidGFnczogJ2Jsb2dnZXIsaW5zdGFudG
 NsaWNrJ1xuZXhjZXJwdDogPi1cbiAgaW5zdGFudGNsaWNrLmpz
@@ -111,6 +78,6 @@ iq5pe26Ze06Ze06ZqU6aKE5Yqg6L296aG16Z2i44CC6L+Z5qC3
 5b2T5L2g5omT5byA6aG16Z2i55qE5pe25YCZ77yM5YW25a6e6a
 G16Z2i5bey57uP5Yqg6L295Yiw5pys5Zyw5LqG77yM5Lmf5bCx
 5Lya5b6I5b+r6IO95Liq5a6M5oiQ5riy5p+T44CCXG5kYXRlOi
-AnMjAxNy0wMi0xOCdcbiIsImhpc3RvcnkiOlstMTU4NjkwMzY3
-MF19
+AnMjAxNy0wMi0xOCdcbiIsImhpc3RvcnkiOls3MzI0NjU2NF19
+
 -->
