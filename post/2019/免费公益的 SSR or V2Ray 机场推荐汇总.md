@@ -3,18 +3,16 @@
 
 可以从此网站「[放牧的风](https://www.youneed.win/free-ssr)」获得 SSR 节点临时使用或借此访问机场。
 
-2020.02.14更新。
+2020.03.09更新。
 
-| 机场                                                         | 流量规则                                                     | 评价                                                         |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ~~[几鸡](https://github.com/NGC-HenryLee/NGC.SS.JJ/)~~<sup>`SSR`</sup> | ~~每月初始10G流量，每天签到0.8~5GB~~                         | ~~线路质量不错，线路多，量足，推荐首选~~                     |
-| [IBCN](http://portal.ibcn.space/)<sup>`SSR`</sup>            | 初始流量10G，签到获得0.5-1GB流量，限速5M，在线设备2个        | 提供4条免费线路，流量较多，适合日常使用                      |
-| [速鹰](https://suying777.com/)<sup>`SSR`</sup>               | 初始流量10G，签到获得1GB-7GB流量，限速20M，在线设备1个       | 提供20余条免费线路，签到获得流量较大，适合中度使用，免费账户有效期大于2个月 |
-| [艾可云](https://www.v2aky.com/)<sup>`V2Ray`</sup>           | 初始流量3G，每月重置，无限速，高达1000M速率可用，在线设备5台 | 提供7条免费线路，流量较少，速度很快，适合轻度使用，免费账户有效期大于12个月 |
-| [纸飞机](https://rt7.xyz/)<sup>`V2Ray`</sup>                 | 初始流量3G，签到所获小几十兆流量                             | 目前提供免费节点十个，流量较少，适合轻度使用                 |
-| [好好学习](https://user.xupng.cn/)<sup>`V2Ray`</sup>         | 初始流量20G，签到可获小几百兆流量 ，不限速，在线设备2个      | 节点速度不错，注册无需验证邮箱真实性，账户有效期1个月        |
-| [拓普网络](https://passr.top/)<sup>`V2Ray`</sup>             | 初始流量0.5G，签到可获小几百兆流量 ，不限速，在线设备2个     | 线路数量较多，速度不错，适合轻度使用                         |
-| ~~[卡车云加速](http://www.kcssr.id/)~~<sup>`V2Ray`</sup>     | ~~初始流量5G，签到可获小几百兆流量，限速2M，在线设备1个~~    | ~~提供3条免费线路，流量不多，适合轻度使用~~                  |
+| 机场                                                   | 流量规则                                                     | 评价                                                         |
+| ------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [IBCN](http://portal.ibcn.space/)<sup>`SSR`</sup>      | 初始流量10G，签到获得0.5-1GB流量，限速5M，在线设备2个        | 提供4条免费线路，流量较多，适合日常使用                      |
+| [速鹰](https://suying777.com/)<sup>`SSR`</sup>         | 初始流量10G，签到获得1GB-7GB流量，限速20M，在线设备1个       | 提供20余条免费线路，签到获得流量较大，适合中度使用，免费账户有效期大于2个月 |
+| [纸飞机](https://zfj.aeer.xyz/)<sup>`V2Ray`</sup>      | 初始流量3G，签到所获小几十兆流量                             | 目前提供免费节点十个，流量较少，适合轻度使用                 |
+| [好好学习](https://user.xupng.cn/)<sup>`V2Ray`</sup>   | 初始流量20G，签到可获小几百兆流量 ，不限速，在线设备2个      | 节点速度不错，注册无需验证邮箱真实性，账户有效期1个月        |
+| [拓普网络](https://passr.top/)<sup>`V2Ray`</sup>       | 初始流量0.5G，签到可获小几百兆流量 ，不限速，在线设备2个     | 线路数量较多，速度不错，适合轻度使用                         |
+| ~~[艾可云](https://www.v2aky.com/)~~<sup>`V2Ray`</sup> | ~~初始流量3G，每月重置，无限速，高达1000M速率可用，在线设备5台~~ | ~~提供7条免费线路，流量较少，速度很快，适合轻度使用，免费账户有效期大于12个月~~ |
 
 关于失效的说明：一是测试时所提供的免费线路不能使用；二是不再提供免费节点。
 
@@ -36,11 +34,19 @@
 
 4. 对应得平台的软件在哪里下？
 
+   SSR 客户端：
+   
    - Windows：[下载](https://cdn.jsdelivr.net/gh/liyunaini/Depot@master/ShadowsocksR/ssr-win.7z)
    - Windows（游戏）：[下载](https://cdn.jsdelivr.net/gh/liyunaini/Depot@master/ShadowsocksR/SSTap.7z)
    - Android：[下载](https://cdn.jsdelivr.net/gh/liyunaini/Depot@master/ShadowsocksR/ssr-android.apk)
    - Mac：[下载](https://cdn.jsdelivr.net/gh/liyunaini/Depot@master/ShadowsocksR/ssr-mac.dmg)
-   - iOS：[点此跳转](https://i.shadowrocket.org/)
+   - iOS：[点此跳转1](https://lueyingpro.github.io/shadowrocket/index.html)  [点此跳转2](https://apps.kitsunebi.online/)
+   
+   V2ray 客户端：
+   
+   - Windows：[64位](https://cdn.jsdelivr.net/gh/liyunaini/Depot@master/v2rayN/v2ray-windows-64.zip)  [32位](https://www.lanzous.com/ia3jhih)
+   - Android：[下载](https://cdn.jsdelivr.net/gh/liyunaini/Depot@master/v2rayN/com.v2ray.ang.apk)
+   - iOS：[点此跳转1](https://lueyingpro.github.io/shadowrocket/index.html)  [点此跳转2](https://apps.kitsunebi.online/)
 
 ### 想讲的
 
@@ -79,6 +85,7 @@ iK572R77yM5a6a5pe25pu05paw5Y+v55So55qE5py65Zy65pyN
 xuICDmqKHlvI/vvIzmiYvmnLrkuIror7forr7nva7kuLrnu5Xo
 v4flsYDln5/nvZHlkozlpKfpmYblnLDlnYDjgILlsL3ph4/kuI
 3ljrvkvb/nlKjlm73kuqfova/ku7bjgIJcbmV4dGVuc2lvbnM6
-XG4gIHByZXNldDogZ2ZtXG4iLCJoaXN0b3J5IjpbLTE2OTk4Nz
-IzMDQsMTM5NDA4NTYxNSw4Njc4NzYyOTRdfQ==
+XG4gIHByZXNldDogZ2ZtXG4iLCJoaXN0b3J5IjpbLTczMDMyMj
+MyNywtMTY5OTg3MjMwNCwxMzk0MDg1NjE1LDg2Nzg3NjI5NF19
+
 -->
