@@ -1,4 +1,4 @@
-给大家找资源的过程中遇到比较好的网站。现在我的时间越来越捉襟见肘了，不能及时回复大家，今天整理分享出来，希望大家能够靠自己就能找到资源。
+给大家找资源的过程中遇到比较好的网站。现在我的时间越来越捉襟见肘了，不能及时回复大家，今天整理分享出来，希望大家能够靠自己就能找到资源。这个页面相当于一个导航页，觉得有用可以收藏到浏览器书签，方便日后不迷路。
 
 > 手机用户建议使用**夸克浏览器**打开以下网站，以获得最优的观看体验（屏蔽广告、悬浮小窗播放、缓存视频到手机存储）。
 
@@ -38,6 +38,6 @@
 3. 希望大家有能力还是多多支持正版。
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoiZGF0ZTogMjAyMC01LTE1XG50YWdzOi
-DliIbkuqtcbiIsImhpc3RvcnkiOlsxMTgxODgsLTE4ODgyOTIx
-NjldfQ==
+DliIbkuqtcbiIsImhpc3RvcnkiOlstNTI1NjIzNjM1LC0xODg4
+MjkyMTY5XX0=
 -->
