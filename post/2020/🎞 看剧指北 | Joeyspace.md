@@ -35,9 +35,10 @@
 
 1. 2020.5.15 更新；
 2. 有意见或找不到的资源可以在下方留言或加 Q 群：710933271 反馈；
-3. 希望大家有能力还是多多支持正版。
+3. 网站有广告，严重影响观感，夸克浏览器解君愁，附赠小窗播放、视频缓存功能。
+4. 希望大家有能力还是多多支持正版。
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoiZGF0ZTogMjAyMC01LTE1XG50YWdzOi
-DliIbkuqtcbiIsImhpc3RvcnkiOlstNTI1NjIzNjM1LC0xODg4
+DliIbkuqtcbiIsImhpc3RvcnkiOlsxODQxMTAwNjAxLC0xODg4
 MjkyMTY5XX0=
 -->
