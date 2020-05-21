@@ -1,5 +1,3 @@
-## 2020 年绕开百度网盘限速的方法
-
 写在后 Pandownload 时代。
 
 PD 是一款优秀的软件，可以从软件强大的功能、易用性和公益性质看出。因其受益的网友想必不可胜数，所以在 PD 作者被捕后网上哀嚎一片。
@@ -63,6 +61,8 @@ Tampermonkey 扩展和油猴脚本的安装与上一节是一样的，就不赘�
 
 **注意在使用过程中，需要在 Kiwi 浏览器设置中勾选「桌面版网站」这一选项。**
 
+![](https://cdn.jsdelivr.net/gh/joeyliu6/Blogger@master/static_files/iljw/img/large/baiduwangpan-kiwi-android.gif)
+
 Kiwi 浏览器还支持添加第三方下载器，例如 ADM、IDM+、手机迅雷。我尝试调用 ADM 多线程下载百度网盘的文件，但是失败了，显示错误；其他下载器也显示相同错误或无速度。
 
 --------
@@ -70,5 +70,5 @@ Kiwi 浏览器还支持添加第三方下载器，例如 ADM、IDM+、手机迅�
 
 囿于水平有限，上文内容可能有表述错误之处，欢迎指正。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3NDA5ODQ4MF19
+eyJoaXN0b3J5IjpbMzc0ODEwOTc3LDExNzQwOTg0ODBdfQ==
 -->
