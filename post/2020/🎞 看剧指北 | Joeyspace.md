@@ -1,3 +1,4 @@
+
 给大家找资源的过程中遇到比较好的网站。现在我的时间越来越捉襟见肘了（个人原因），不能及时回复大家，今天整理分享出来。它就相当于一个导航页，如果你觉得有用可以收藏到浏览器书签，以便日后不迷路。
 
 > 手机用户建议使用**夸克浏览器**打开以下网站，以获得最优的观看体验（屏蔽广告、悬浮小窗播放、缓存视频到手机存储）。
@@ -8,6 +9,7 @@
 - [蒙面大侠](http://mengmiandaxia.com/)
 - [4K 屋](http://www.kkkkwo.com/)
 - [无双影视](https://53ys.cc/)
+- [NO视频](https://www.novipnoad.com/)：主要为国外影片综艺
 
 ### 🎃动漫
 
@@ -33,12 +35,12 @@
 
 ### 🎈说明
 
-1. 2020.5.15 更新；
+1. 2020.5.21 更新；
 2. 有意见或找不到的资源可以在下方留言或加 Q 群：710933271 反馈；
 3. 网站有广告，严重影响观感，夸克浏览器解君愁，附赠小窗播放、视频缓存功能。
 4. 希望大家有能力还是多多支持正版。
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoiZGF0ZTogMjAyMC01LTE1XG50YWdzOi
-DliIbkuqtcbiIsImhpc3RvcnkiOlstMjg1MDAzOTAwLC0xODg4
-MjkyMTY5XX0=
+DliIbkuqtcbiIsImhpc3RvcnkiOls0NjA4MTA4NDQsLTI4NTAw
+MzkwMCwtMTg4ODI5MjE2OV19
 -->
