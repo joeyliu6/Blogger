@@ -1,8 +1,5 @@
 
-
-![Thumbnail-blogger](https://cdn.jsdelivr.net/gh/joeyliu6/Blogger@master/static_files/iljw/img/large/Thumbnail-blogger.png)
-
-为 Blogger 模板国内访问优化时，会遇到博客首页文章的缩略图不显示的问题。我总结了一种思路供大家参考[^1]。
+为 Blogger 模板国内访问优化时，会遇到博客首页文章的缩略图不显示的问题。我总结了一种思路供大家参考[1](https://blog.iljw.me/2019/07/blogger-thumbnail.html#fn1)。
 
 ### 前言
 
@@ -31,7 +28,7 @@
 <a style="display: none;" href="#">图片地址放在这里</a>
 ```
 
-2. 在 Blogger 模板文件的相应位置中插入以下代码：
+1. 在 Blogger 模板文件的相应位置中插入以下代码：
 
 ```xml
 <b:if cond='data:post.featuredImage'>  <!--判断文章内是否有图片，有则代码继续执行-->
@@ -52,11 +49,22 @@
 Blogger 有一个语法（`<data:post.body.escaped/>`）可以获取文章的全部内容，我们可以使用 JavaScript 利用正则表达式将文章中的第一张图片链接提取出来。大概流程如下：
 
 1. 在模板中，创建一个一容器，用于放置缩略图。
+
    1. 因为缩略图链接是在后续使用 Javascript 加上去的，所以我们可以使用一张 loading 图先占位，这样一开始博客读者们会认为图片正在加载中，可提高用户体验。如本博客所使用的 loading 图。
    2. ![如风蒹葭博客图片 loading 图](https://ae01.alicdn.com/kf/HTB1Gb7LUmzqK1RjSZFL5jcn2XXac.gif)
-2. 在模板中，将`<data:post.body.escaped/>`放在合适位置。
+
+2. 在模板中，将
+
+   ```
+   <data:post.body.escaped/>
+   ```
+
+   放在合适位置。
+
    1. 这步是方便 Javascript 代码接获取文章的内容；
+
 3. 在模板合适位置插入 Javascript 代码。
+
    1. 获取文章内容后，利用正则表达式从文章中提取出第一张图片的链接；
    2. 用第一张图片链接替换掉 loading 图链接。
 
@@ -85,7 +93,7 @@ Blogger 有一个语法（`<data:post.body.escaped/>`）可以获取文章的全
 </b:if>
 ```
 
-2. 修改模板，找到原有缩略图代码删去，用以下代码替换：
+1. 修改模板，找到原有缩略图代码删去，用以下代码替换：
 
 ```xml
 <b:if cond='data:post.featuredImage'>  <!--判断文章内是否有图片，有则代码继续执行-->
@@ -95,7 +103,6 @@ Blogger 有一个语法（`<data:post.body.escaped/>`）可以获取文章的全
     </div>
 </b:if>
 ```
-具体实现，可参考本站。以及下方评论区。
 
 此方法优点是无需手动设置缩略图，比较省心。
 
@@ -103,7 +110,7 @@ Blogger 有一个语法（`<data:post.body.escaped/>`）可以获取文章的全
 
 #### 三、使用图像缓存和调整服务
 
-[Images.weserv.nl](https://images.weserv.nl/) 是一个图像缓存和调整服务[^2]。何谓「缓存」？何谓「调整」?
+[Images.weserv.nl](https://images.weserv.nl/) 是一个图像缓存和调整服务[2](https://blog.iljw.me/2019/07/blogger-thumbnail.html#fn2)。何谓「缓存」？何谓「调整」?
 
 缓存：将外部的图片下载网站自己的服务器。
 
@@ -123,7 +130,7 @@ https://images.weserv.nl/?url=https://lh3.googleusercontent.com/proxy/xEyLqHkPb9
 
 [点击测试图片速度。](https://images.weserv.nl/?url=https://lh3.googleusercontent.com/proxy/xEyLqHkPb9mD2P9z19zdKlvHubho2dTlmlScOUGvV1HzhmpODKyOUFXZt8Sa9AiaqHR20IF2H8U_9SjLtcJhDtX9qDwuXvjtFR7GH2scm2pBRIGjubsEuSp6yBcbcHpaqODk5gl8DDbxV_HTutGkgchC-P4rig)
 
-那么，mages.weserv.nl 的服务器接收到了`url`这个参数，它的服务器向谷歌的服务器请求下载此图片，并将其上传到 Cloudflare 遍布全球的 CDN  网络中。
+[images.weserv.nl](http://mages.weserv.nl/) 的服务器接收到了`url`这个参数，它的服务器向谷歌的服务器请求下载此图片，并将其上传到 Cloudflare 遍布全球的 CDN 网络中。
 
 所以，当我们访问`https://images.weserv.nl/?url=https://lh3.googleusercontent.com/proxy/...`这一串连接时，我们是从 Cloudflare 上获取图片的。故其相当于一个跳板，我们借助其就可以访问 Blogger 自带缩略图了。
 
@@ -140,6 +147,16 @@ https://images.weserv.nl/?url=<data:post.featuredImage/>
 
 说明：在前言中，已提到，主题模板中`<data:post.featuredImage/>`代表着博文的缩略图的链接，故在此链接前方加上`https://images.weserv.nl/?url=`就可大功告成了。
 
+举个例子：
+
+```xml
+<b:if cond='data:post.featuredImage'>
+    <div class='snippet-thumbnail'>
+        <img expr:src='"https://images.weserv.nl/?url=" + data:post.featuredImage'/>
+    </div>
+</b:if>
+```
+
 为什么可以选择这项服务呢？我个人是这样认为的：
 
 - 修改模板十分简单，在模板几处加上代码即可；
@@ -153,8 +170,10 @@ https://images.weserv.nl/?url=<data:post.featuredImage/>
 >
 > 在写作时，我希望把问题讲清楚，但囿于成文时理解水平有限，不能一一解释，故文章后续会不断增删补改，敬请谅解。
 
-[^1]:[文章首图：Thumbnail: o que é, 8 dicas de como fazer e principais ferramentas | Klickpages](https://klickpages.com.br/blog/youtube-thumbnail-dicas/)
-[^2]: [Image cache & resize service](https://images.weserv.nl/)
+------
+
+1. [文章首图：Thumbnail: o que é, 8 dicas de como fazer e principais ferramentas | Klickpages](https://klickpages.com.br/blog/youtube-thumbnail-dicas/) [↩︎](https://blog.iljw.me/2019/07/blogger-thumbnail.html#fnref1)
+2. [Image cache & resize service](https://images.weserv.nl/) [↩︎](https://blog.iljw.me/2019/07/blogger-thumbnail.html#fnref2)
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoidGFnczogJ0Jsb2dnZXIs57yp55Wl5Z
 u+J1xuZGF0ZTogMjAxOS03LTExXG5leGNlcnB0OiDkuLogQmxv
@@ -162,5 +181,5 @@ Z2dlciDmqKHmnb/lm73lhoXorr/pl67kvJjljJbml7bvvIzkvJ
 rpgYfliLDljZrlrqLpppbpobXmlofnq6DnmoTnvKnnlaXlm77k
 uI3mmL7npLrnmoTpl67popjjgILmiJHmgLvnu5PkuobkuIDnp4
 3mgJ3ot6/kvpvlpKflrrblj4LogIPjgIJcbiIsImhpc3Rvcnki
-OlsxNTIxNTkzNjc1XX0=
+OlstMTM3OTUyMjI5NSwxNTIxNTkzNjc1XX0=
 -->
