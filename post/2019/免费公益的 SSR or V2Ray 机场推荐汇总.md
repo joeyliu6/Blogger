@@ -1,17 +1,17 @@
+
 写给需要的人。建议收藏网址，方便每日签到获得流量。
 
 可以使用「[蓝灯](https://github.com/getlantern/lantern)」此工具来临时使用或借此访问被墙机场。博文尽力更新机场在国内可访问的地址。
 
-2020.08.09 更新。
+2020.09.18 更新。
 
 | 机场                                               | 流量规则                                                     | 评价                                                         |
 | -------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [IBCN](https://dash.ibcn.space/)<sup>`V2ray`</sup> | 新注册用户 5G 流量，每日签到获得 0.5-1 GB 流量，月初重置流量为 20 G，限速 10M，在线设备 1 台。 | 提供 2 个美国、2 个俄罗斯节点，本地测速结果较慢，只适合上谷歌查查资料。注册无需验证邮箱真实性，30天未使用，系统自动删号。 |
+| [IBCN](https://dash.ibcn.space/)<sup>`V2ray`</sup> | 新注册用户 5G 流量，每日签到获得 0.5-1 GB 流量，月初重置流量为 20 G，限速 10M，在线设备 1 台。 | 提供2 个俄罗斯节点，本地测速结果较慢，只适合上谷歌查查资料。注册无需验证邮箱真实性，30天未使用，系统自动删号。 |
 | [FOC 机场](https://fo.ljfxz.com/)<sup>`SSR`</sup>  | 初始流量 1G，签到大几百兆流量，在线设备 1 台，限速 10M。     | 免费账户长期有效，免费节点三个，速度不错，推荐使用，不验证邮箱真实性。 |
-| [纸飞机](https://zfj.sr3.xyz/)<sup>`V2Ray`</sup>   | 新注册用户初始流量 200M，签到所获小几十兆流量，不限制速率，在线设备 1 台。 | 免费账户有效期一个月；免费版 1 个 V2ray 节点、2 个 SSR 节点，本地测速结果较慢，注册不验证邮箱真实性。 |
+| [纸飞机](https://zfj.sr3.xyz/)<sup>`V2Ray`</sup>   | 新注册用户初始流量 200M，签到所获小几十兆流量，不限制速率，在线设备 1 台。 | 免费账户有效期1周；免费节点质量不错，注册不验证邮箱真实性。这家机场存活蛮久，从成文以来一直坚挺着，轻度使用可以选择它。 |
 | [云梯](https://19se.cc/)<sup>`V2Ray`</sup>         | 初始流量 1G，每日签到可赠大几百兆流量，在线设备数 1 台。     | 免费账户长期有效，5 条免费节点，实测速度不错。               |
-| [猫云](https://catcloud.cc/)<sup>`V2Ray`</sup>     | 初始流量 2G，每日签到可赠大几百兆流量，在线设备数 1 台。     | 免费账户长期有效，2 条公益香港节点，实测速度不错。           |
-| [THESSR](http://thessr.shop/)<sup>`SSR`</sup>      | 不限制在线设备数量，流量充足。                               | 免费账户长期有效，3 条免费节点。                             |
+| [猫云](https://catcloud.cc/)<sup>`V2Ray`</sup>     | 初始流量 200M，每日签到可赠小几百兆流量，在线设备数 1 台。   | 免费账户长期有效，免费节点多换几条总有一条能用，实测速度不错。 |
 | [otto.SSR](https://ottof.xyz/)<sup>`SSR`</sup>     | 初始流量 5G，每日签到可赠大几百兆流量。                      | 免费账户长期有效，目前 5 条免费美国 SSR 节点。               |
 
 ### SSR / V2ray 使用教程
@@ -89,7 +89,7 @@ xuICDmqKHlvI/vvIzmiYvmnLrkuIror7forr7nva7kuLrnu5Xo
 v4flsYDln5/nvZHlkozlpKfpmYblnLDlnYDjgILlsL3ph4/kuI
 3ljrvkvb/nlKjlm73kuqfova/ku7bjgIJcbmV4dGVuc2lvbnM6
 XG4gIHByZXNldDogZ2ZtXG5kYXRlOiAnMjAxOS0wNS0wOSdcbi
-IsImhpc3RvcnkiOlstMjAxMDMxNzI4NiwtMjMyNDA0Njk0LC0x
-MDg0MTg5ODk5LDg1MjY3NDMwOSwtMTY5OTg3MjMwNCwxMzk0MD
-g1NjE1LDg2Nzg3NjI5NF19
+IsImhpc3RvcnkiOlstMTE3MjI3OTc5MSwtMjAxMDMxNzI4Niwt
+MjMyNDA0Njk0LC0xMDg0MTg5ODk5LDg1MjY3NDMwOSwtMTY5OT
+g3MjMwNCwxMzk0MDg1NjE1LDg2Nzg3NjI5NF19
 -->
